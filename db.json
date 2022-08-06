@@ -1,0 +1,68 @@
+{
+  "clientes": [
+    {
+      "nombre": "Pablo",
+      "empresa": "PG.code",
+      "email": "correo@correo.com",
+      "telefono": "12312313",
+      "notas": "Cliente recomendado por otro",
+      "id": 1
+    },
+    {
+      "nombre": "Juan",
+      "empresa": "Nada",
+      "email": "fgddddfgjbhj@gmail.com",
+      "telefono": "32423234",
+      "notas": "Cliente del exterior",
+      "id": 2
+    },
+    {
+      "nombre": "José Luis ",
+      "empresa": "Anda",
+      "email": "admin@admin.com",
+      "telefono": "45464464",
+      "notas": "Es un nuevo cliente de la empresa",
+      "id": 4
+    },
+    {
+      "nombre": "Maria",
+      "empresa": "ALARQUITECTAS",
+      "email": "fgddddfgjbhj@gmail.com",
+      "telefono": "32423234",
+      "notas": "Clienta excelente, realizo dos trabajos con nosotros",
+      "id": 5
+    },
+    {
+      "nombre": "Matías ",
+      "empresa": "Testing Group",
+      "email": "correo@correo.com",
+      "telefono": "32423234",
+      "notas": "Se encarga del testing en los softwares y websites",
+      "id": 6
+    },
+    {
+      "nombre": "Juan",
+      "empresa": "CCJ",
+      "email": "correo@correo.com",
+      "telefono": "094428049",
+      "notas": "Códigos con Juan nos contrató ",
+      "id": 7
+    },
+    {
+      "nombre": "Luis",
+      "empresa": "Luis Construcciones",
+      "email": "fgddddfgjbhj@gmail.com",
+      "telefono": "12312313",
+      "notas": "Luis es mi amigo",
+      "id": 8
+    }
+  ],
+  "usuarios": [
+    {
+      "nombre": "Pablo Emanuel",
+      "email": "correo@correo.com",
+      "password": "$2a$10$wu81BoCi4/UN/qgq7kCq8.DMsNru4X32TsT/A2EfVzLQrFqFBKkJy",
+      "id": 2
+    }
+  ]
+}
