@@ -26,7 +26,7 @@ const Formulario = ({cliente}) => {
             if(!cliente.id){
 
                 //Registro nuevo en el BD
-                const url= `${import.meta.env.VITE_API_URL}/clientes`;
+                const url= `https://my-json-server.typicode.com/pgcodedeveloper/api_crm/clientes`;
                 const respuesta= await fetch(url,{
                     method: 'POST',
                     body: JSON.stringify(valores),
@@ -43,7 +43,7 @@ const Formulario = ({cliente}) => {
             else{
 
                 //Actualizando un registro a partir de su ID con PUT
-                const url= `${import.meta.env.VITE_API_URL}/clientes/${cliente.id}`;
+                const url= `https://my-json-server.typicode.com/pgcodedeveloper/api_crm/clientes/${cliente.id}`;
                 const respuesta= await fetch(url,{
                     method: 'PUT',
                     body: JSON.stringify(valores),

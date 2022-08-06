@@ -14,7 +14,7 @@ const CrearCuenta = () => {
     const existeUser= async (email) =>{
         if(email){
             try {
-                const url= `${import.meta.env.VITE_API_URL}/usuarios?email=${email}`;
+                const url= `https://my-json-server.typicode.com/pgcodedeveloper/api_crm/usuarios?email=${email}`;
                 const respuesta = await fetch(url);
                 const resultado = await respuesta.json();
                 if(resultado.length > 0){
@@ -40,7 +40,7 @@ const CrearCuenta = () => {
                 values.password=hashIt(values.password);
                 delete values.passwordR;
                 try {
-                    const url= `${import.meta.env.VITE_API_URL}/usuarios`;
+                    const url= `https://my-json-server.typicode.com/pgcodedeveloper/api_crm/usuarios`;
                     const respuesta= await fetch(url,{
                         method: 'POST',
                         body: JSON.stringify(values),

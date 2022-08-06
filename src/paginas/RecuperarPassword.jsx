@@ -15,7 +15,7 @@ const RecuperarPassword = () => {
     const existeUser= async (email) =>{
         if(email){
             try {
-                const url= `${import.meta.env.VITE_API_URL}/usuarios?email=${email}`;
+                const url= `https://my-json-server.typicode.com/pgcodedeveloper/api_crm/usuarios?email=${email}`;
                 const respuesta = await fetch(url);
                 const resultado = await respuesta.json();
                 if(resultado.length > 0){
@@ -35,7 +35,7 @@ const RecuperarPassword = () => {
         if(usuario[0].id){
             try {
                 usuario[0].password= '';
-                const url= `${import.meta.env.VITE_API_URL}/usuarios/${usuario[0].id}`;
+                const url= `https://my-json-server.typicode.com/pgcodedeveloper/api_crm/usuarios/${usuario[0].id}`;
                 const respuesta= await fetch(url,{
                     method: 'PUT',
                     body: JSON.stringify(usuario[0]),

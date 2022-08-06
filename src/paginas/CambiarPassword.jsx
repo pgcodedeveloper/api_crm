@@ -15,7 +15,7 @@ const CambiarPassword = () => {
     //Funcion que verifica si existe el usauario
     const existeUser= async () =>{
         try {
-            const url= `${import.meta.env.VITE_API_URL}/usuarios/${id}`;
+            const url= `https://my-json-server.typicode.com/pgcodedeveloper/api_crm/usuarios/${id}`;
             const respuesta = await fetch(url);
             const resultado = await respuesta.json();
             return resultado;
@@ -36,7 +36,7 @@ const CambiarPassword = () => {
             if(usuario){
                 usuario.password=hashIt(values.password);
                 try {
-                    const url= `${import.meta.env.VITE_API_URL}/usuarios/${id}`;
+                    const url= `https://my-json-server.typicode.com/pgcodedeveloper/api_crm/usuarios/${id}`;
                     const respuesta= await fetch(url,{
                         method: 'PUT',
                         body: JSON.stringify(usuario),

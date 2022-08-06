@@ -12,7 +12,7 @@ const EditarCliente = () => {
   useEffect( () =>{
     const consultarAPI= async () =>{
         try {
-            const url= `${import.meta.env.VITE_API_URL}/clientes/${id}`;
+            const url= `https://my-json-server.typicode.com/pgcodedeveloper/api_crm/clientes/${id}`;
             const respuesta = await fetch(url);
             const resultado = await respuesta.json();
             if(!resultado.id){
