@@ -22,7 +22,7 @@ const LoginForm = ({setLogin,setUsuario}) => {
   const handleSubmit = async (valores) =>{
     //console.log(valores);
     try {
-      const url= import.meta.env.VITE_API_URL + `/usuarios?email=${valores.email}`;
+      const url=  `${import.meta.env.VITE_API_URL}/usuarios?email=${valores.email}`;
       const respuesta = await fetch(url);
       const resultado = await respuesta.json();
       if(resultado.length > 0){
